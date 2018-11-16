@@ -1,20 +1,19 @@
 <?php
 /*
-Plugin Name: Accordions Override
-Plugin URI:  https://github.com/squarecandy/accordions-override
-GitHub Plugin URI: https://github.com/squarecandy/accordions-override
-Description: Adds some settings and removes some others from the PickPlugins "Accordion" plugin.
-Version:     v1.0.0
-Author:      Square Candy Design
-Author URI:  http://squarecandydesign.com
-License:     GPL3
-License URI: https://www.gnu.org/licenses/gpl-3.0.txt
-Text Domain: squarecandy_accordions_override
+Plugin Name:        Accordions Override
+Plugin URI:         https://github.com/squarecandy/accordions-override
+GitHub Plugin URI:  https://github.com/squarecandy/accordions-override
+Description:        Adds some settings and removes some others from the PickPlugins "Accordion" plugin.
+Version:            1.0.1
+Author:             Square Candy Design
+Author URI:         http://squarecandydesign.com
+License:            GPL3
+License URI:        https://www.gnu.org/licenses/gpl-3.0.txt
 */
 
 function squarecandy_accordions_override_acf() {
 	// if ACF is enabled and user is an Admin
-	if( function_exists('acf_add_local_field_group') && current_user_can('manage_options') ):
+	if ( function_exists('acf_add_local_field_group') && current_user_can('manage_options') ) :
 	// Add ACF fields box to control the speed and animation style
 	acf_add_local_field_group(array(
 		'key' => 'group_5be47c02a8c4e',
