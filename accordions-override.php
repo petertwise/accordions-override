@@ -95,13 +95,14 @@ function squarecandy_accordions_override_css() {
 	if (
 		! current_user_can('manage_options') &&
 		'accordions' == $screen->post_type &&
-		'post' == $screen->base
+		( 'post' == $screen->base || 'edit' == $screen->base )
 	) {
 		echo '<style>
 			#shortcode .field-input > div:nth-child(n+2),
 			#accordions_metabox li.tab-nav[data-id=options],
 			#accordions_metabox li.tab-nav[data-id=style],
-			#accordions_metabox li.tab-nav[data-id=custom_scripts] {
+			#accordions_metabox li.tab-nav[data-id=custom_scripts],
+			tr.type-accordions .column-shortcode textarea {
 				display: none;
 			}
 		</style>';
