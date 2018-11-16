@@ -4,7 +4,7 @@ Plugin Name: Accordions Override
 Plugin URI:  https://github.com/squarecandy/accordions-override
 GitHub Plugin URI: https://github.com/squarecandy/accordions-override
 Description: Adds some settings and removes some others from the PickPlugins "Accordion" plugin.
-Version:     v0.1.0
+Version:     v1.0.0
 Author:      Square Candy Design
 Author URI:  http://squarecandydesign.com
 License:     GPL3
